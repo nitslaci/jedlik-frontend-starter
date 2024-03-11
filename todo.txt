@@ -1,0 +1,28 @@
+1. GitHub repo klónozása, átnevezése
+    https://github.com/nitslaszlo/jedlik-frontend-starter-2024
+2. Node.js csomagok telepítése (npm i)
+3. Források, backend szerver másolása, backend szerver indítása, ha a szerver lokális gépen fut
+4. Starter sablon megnyitása, csomagverzió(k) frissítése a package.json állományban (ha kéri a feladat), 
+5. Axios backend szerver beállítása - Base URL és port(ha adott): .env állományban
+6. "1"-oldali "IOne" interface és axios URL-ek, akciómetótusok aktualizálása: src/stores/oneStore.ts
+7. "N"-oldali "IMany" interface, URL-ek és akciómetódusok aktualizálása: src/stores/manyStore.ts
+8. Egyéb táblához (ha van) "IOther" interface, URL-ek és akciómetódusok készítése: src/stores/otherStore.ts
+9. Layout módosítása a feladat szerint: src/layouts/MainLayout.vue 
+10. Nyitó oldal elkészítése (források beillesztése): src/pages/IndexPage.vue
+11. További oldalak elkészítése: src/pages/xyzPage.vue (hasznád a megfelelő minta mentését)
+12. Komponensek elkészítése (források beillesztése): src/components mappában (hasznád a megfelelő minta mentését)
+13. Route-ok modosítása/elkészítése az új oldalakhoz: src/router/index.ts 
+14. Takarítás-törlés: oldalak, menük, route-ok, állapotsor ki-be kapcsolása, stb.:
+   - src/layouts/MainLayout.vue,
+   - src/router/index.ts,
+   - src/store/*Store.ts,
+   - src/pages/x*.vue állományok törlése
+   - src/components/x*.vue állományok törlése
+
+
+Nyomkövetés:
+1. F5 -el indítsad el a nyomkövetést
+2. Helyezd el a töréspontot/töréspontokat a forrásban
+3. A megjelenő böngészőablakban "tevékenykedj" úgy, hogy a breakpoint-ra kerüljön a vezérlés
+4. Vizsgáld meg a változók aktuális értékeit, figyeld meg a végrehajtásra kerülő utasításokat (F10, F11)
+5. Folytasd a nyomkövetést: F5, F10, F11, stb. (lsd. VS Code - Run menüben a funkciókat)
