@@ -1,13 +1,14 @@
 <script setup lang="ts">
-// import { useStore } from "../stores/store";
 // import { onMounted } from "vue";
-// import { date } from "quasar";
-// import router from "../router";
+// import { useManyStore } from "../stores/manyStore";
+// import { useAppStore } from "../stores/appStore";
+// /import { useRouter } from "vue-router";
 
-// const store = useStore();
+// const manyStore = useManyStore();
+// const appStore = useAppStore();
 
 // onMounted(() => {
-//   store.many_GetAll();
+//   storeMany.GetAll();
 // });
 </script>
 

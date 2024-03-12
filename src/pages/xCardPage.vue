@@ -6,7 +6,6 @@ import { onMounted } from "vue";
 import xEdit from "../components/xEditComponent.vue";
 import xNew from "../components/xNewComponent.vue";
 
-
 const appStore = useAppStore();
 const manyStore = useManyStore();
 
