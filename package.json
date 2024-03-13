@@ -1,7 +1,7 @@
 {
-  "name": "jedlik-frontend-starter-2024",
+  "name": "jedlik-frontend-starter",
   "version": "0.0.1",
-  "description": "Jedlik frontend starter for exams 2024",
+  "description": "Jedlik frontend starter for exams",
   "productName": "Quasar App",
   "author": "nitslaszlo <nitslaszlo@gmail.com>",
   "type": "module",

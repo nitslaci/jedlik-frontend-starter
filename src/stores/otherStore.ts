@@ -4,6 +4,8 @@ import { api } from "src/boot/axios";
 
 // === INTERFACES ===
 // Convert JSON document to TS Interface quickly: https://transform.tools/json-to-typescript
+
+// Don't forget the question marks after field names!
 export interface IOther {
   id?: number; // PK
 }

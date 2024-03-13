@@ -7,6 +7,8 @@ const appStore = useAppStore();
 
 // === INTERFACES ===
 // Convert JSON document to TS Interface quickly: https://transform.tools/json-to-typescript
+
+// Don't forget the question marks after field names!
 export interface IMany {
   id?: number; // PK
   categoryId?: number; // FK
