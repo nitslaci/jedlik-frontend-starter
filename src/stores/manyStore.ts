@@ -154,7 +154,6 @@ export const useManyStore = defineStore({
           .then((res) => {
             Loading.hide();
             if (res?.data) {
-              Loading.hide();
               this.GetAll(); // refresh dataN with read all data again from backend
               Notify.create({
                 message: `New document with id=${res.data.id} has been saved successfully!`,
