@@ -173,13 +173,6 @@ export const useManyStore = defineStore({
   persist: {
     enabled: true,
   },
-  // persist: {
-  //   enabled: true,
-  //   strategies: [
-  //     { storage: sessionStorage, paths: ["document", "documentOld"] },
-  //     { storage: localStorage, paths: ["documents"] },
-  //   ],
-  // },
 });
 
 Notify.setDefaults({
