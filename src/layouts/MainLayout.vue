@@ -21,6 +21,7 @@ let showStatusBar = ref(true);
 <template>
   <div class="q-pa-md">
     <q-layout view="hHh LpR fFf">
+      <!-- Header: -->
       <q-header v-model="showMenuBar" class="text-left bg-blue-5" elevated reveal>
         <!-- Menu bar: -->
         <q-toolbar>

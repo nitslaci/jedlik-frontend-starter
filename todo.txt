@@ -1,5 +1,5 @@
 to-do:
-1. GitHub repo klónozása, átnevezése
+1. GitHub repo klónozása, átnevezése feladatlap szerint
     https://github.com/nitslaszlo/jedlik-frontend-starter
 2. Node.js csomagok telepítése (npm i)
 3. Források, backend szerver másolása, backend szerver indítása, ha a szerver lokális gépen fut
