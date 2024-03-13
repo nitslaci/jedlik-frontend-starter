@@ -8,7 +8,7 @@ const appStore = useAppStore();
 // === INTERFACES ===
 // Convert JSON document to TS Interface quickly: https://transform.tools/json-to-typescript
 
-// Don't forget the question marks after field names!
+// Don't forget the question marks (?) after field names!
 export interface IMany {
   id?: number; // PK
   categoryId?: number; // FK
@@ -27,7 +27,7 @@ export interface IMany {
 interface IState {
   document: IMany; // use for create, update, delete and store one document
   documentOld: IMany; // use for only edit (diff and restore)
-  documents: IMany[]; // use for only store zero or many documents
+  documents: IMany[]; // use for store API responses
 }
 
 export const useManyStore = defineStore({

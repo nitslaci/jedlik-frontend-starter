@@ -21,11 +21,4 @@ export const useAppStore = defineStore({
   persist: {
     enabled: true,
   },
-  // persist: {
-  //   enabled: true,
-  //   strategies: [
-  //     { storage: sessionStorage, paths: ["showEditDialog", "showNewDialog"] },
-  //     { storage: localStorage, paths: ["selected"] },
-  //   ],
-  // },
 });

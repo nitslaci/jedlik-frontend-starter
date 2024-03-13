@@ -8,7 +8,7 @@ import { api } from "src/boot/axios";
 // === INTERFACES ===
 // Convert JSON document to TS Interface quickly: https://transform.tools/json-to-typescript
 
-// Don't forget the question marks after field names!
+// Don't forget the question marks (?) after field names!
 export interface IOne {
   id?: number;
   categoryNameField?: string;
@@ -18,7 +18,7 @@ interface IState {
   // For handle CRUD operations:
   document: IOne; // use for create, update, delete and store one document
   documentOld: IOne; // use for only edit (diff and restore)
-  documents: IOne[]; // use for only store zero or many documents
+  documents: IOne[]; // use for store API responses
 }
 
 export const useOneStore = defineStore({
@@ -46,17 +46,9 @@ export const useOneStore = defineStore({
         });
     },
   },
-  // all "state" data is stored in browser session store:
   persist: {
     enabled: true,
   },
-  // persist: {
-  //   enabled: true,
-  //   strategies: [
-  //     { storage: sessionStorage, paths: ["document", "documentOld"] },
-  //     { storage: localStorage, paths: ["documents"] },
-  //   ],
-  // },
 });
 
 Notify.setDefaults({

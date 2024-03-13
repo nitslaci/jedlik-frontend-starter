@@ -13,7 +13,7 @@ export interface IOther {
 interface IState {
   document: IOther; // use for create, update, delete and store one document
   documentOld: IOther; // use for only edit (diff and restore)
-  documents: IOther[]; // use for only store zero or many documents
+  documents: IOther[]; // use for store API responses
 }
 
 export const useOtherStore = defineStore({
