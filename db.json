@@ -8,7 +8,7 @@
       "dateField": "2022-02-21",
       "boolField": true,
       "priceField": "999999",
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/01.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/01.jpg"
     },
     {
       "id": 3,
@@ -18,7 +18,7 @@
       "dateField": "2021-01-01",
       "boolField": true,
       "priceField": 6990000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/03.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/03.jpg"
     },
     {
       "id": 4,
@@ -28,7 +28,7 @@
       "dateField": "2022-02-21",
       "boolField": true,
       "priceField": 250000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/04.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/04.jpg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "dateField": "2022-02-15",
       "boolField": true,
       "priceField": 21990000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/05.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/05.jpg"
     },
     {
       "id": 6,
@@ -48,7 +48,7 @@
       "dateField": "2022-03-04",
       "boolField": true,
       "priceField": 51000000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/06.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/06.jpg"
     },
     {
       "id": 7,
@@ -58,7 +58,7 @@
       "dateField": "2022-02-02",
       "boolField": false,
       "priceField": 8900000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/07.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/07.jpg"
     },
     {
       "id": 8,
@@ -68,7 +68,7 @@
       "dateField": "2022-02-03",
       "boolField": true,
       "priceField": 3000000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/08.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/08.jpg"
     },
     {
       "id": 9,
@@ -78,7 +78,7 @@
       "dateField": "2022-03-03",
       "boolField": true,
       "priceField": 790000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/09.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/09.jpg"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "dateField": "2022-03-14",
       "boolField": true,
       "priceField": 9490000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/10.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/10.jpg"
     },
     {
       "id": 13,
@@ -98,7 +98,7 @@
       "dateField": "2022-03-15",
       "boolField": true,
       "priceField": 920000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/13.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/13.jpg"
     },
     {
       "id": 14,
@@ -108,7 +108,7 @@
       "dateField": "2022-03-13",
       "boolField": false,
       "priceField": 1490000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/14.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/14.jpg"
     },
     {
       "id": 15,
@@ -118,7 +118,7 @@
       "dateField": "2022-03-11",
       "boolField": true,
       "priceField": 760730,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/15.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/15.jpg"
     },
     {
       "id": 17,
@@ -128,7 +128,7 @@
       "dateField": "2022-02-01",
       "boolField": true,
       "priceField": 1570000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/17.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/17.jpg"
     },
     {
       "id": 18,
@@ -138,7 +138,7 @@
       "dateField": "2022-03-16",
       "boolField": true,
       "priceField": 4800000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/18.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/18.jpg"
     },
     {
       "id": 19,
@@ -148,7 +148,7 @@
       "dateField": "2022-03-14",
       "boolField": true,
       "priceField": 26950000,
-      "imgField": "https://nitslaszlo.github.io/jedlik-frontend-starter/19.jpg"
+      "imgField": "https://nitslaszlo.github.io/static/hahu_old/19.jpg"
     }
   ],
   "categories": [
