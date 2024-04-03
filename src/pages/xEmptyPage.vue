@@ -2,14 +2,16 @@
 // import { onMounted } from "vue";
 // import { useManyStore } from "../stores/manyStore";
 // import { useAppStore } from "../stores/appStore";
-// /import { useRouter } from "vue-router";
+// import { useRouter } from "vue-router";
 
 // const manyStore = useManyStore();
 // const appStore = useAppStore();
+// const router = useRouter();
 
 // onMounted(() => {
 //   storeMany.GetAll();
 // });
+
 </script>
 
 <template>

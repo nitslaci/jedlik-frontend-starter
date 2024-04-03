@@ -137,11 +137,7 @@ let showStatusBar = ref(true);
 
       <!-- Main container (DON'T DELETE!) -->
       <q-page-container id="container">
-        <router-view v-slot="{ Component }">
-          <transition name="fade">
-            <component :is="Component" />
-          </transition>
-        </router-view>
+        <router-view />
       </q-page-container>
     </q-layout>
   </div>
