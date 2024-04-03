@@ -14,5 +14,16 @@
   "git.autofetch": true,
   "git.autofetchPeriod": 60,
   "prettier.printWidth": 120,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.vscode": false,
+    "**/tsconfig.json": false,
+    "**/package-lock.json": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/*.js.map": true,
+    "**/*.npmrc": true
+},
 }
