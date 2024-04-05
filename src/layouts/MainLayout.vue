@@ -148,15 +148,6 @@ let showStatusBar = ref(true);
   background-color: #44a5f1;
   color: yellow;
 }
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 
 .my-title {
   font-size: 10px;

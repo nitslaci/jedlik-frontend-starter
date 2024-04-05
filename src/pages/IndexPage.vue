@@ -1,7 +1,19 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+// import { useManyStore } from "../stores/manyStore";
+// import { useOneStore } from "../stores/oneStore";
+// import { useAppStore } from "../stores/appStore";
+// import { onMounted } from "vue";
+
+// const manyStore = useManyStore();
+// const oneStore = useOneStore();
+// const appStore = useAppStore();
 
 const router = useRouter();
+
+// onMounted(() => {
+//   storeMany.GetAll();
+// });
 
 function routerExample() {
   router.push("/empty");
