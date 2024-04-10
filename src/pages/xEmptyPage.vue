@@ -11,7 +11,6 @@
 // onMounted(() => {
 //   storeMany.GetAll();
 // });
-
 </script>
 
 <template>

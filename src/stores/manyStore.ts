@@ -159,7 +159,8 @@ export const useManyStore = defineStore({
                 message: `New document with id=${res.data.id} has been saved successfully!`,
                 color: "positive",
               });
-              // router.push("/page_path");
+              // Example page routing from store (no import required)
+              // this.router.push("/page_path");
             }
           })
           .catch((error) => {
