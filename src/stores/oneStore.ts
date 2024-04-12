@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import { Notify, Loading } from "quasar";
-import { api } from "src/boot/axios";
+import { api } from "../boot/axios";
 
 // import { useAppStore } from "./appStore";
 // const appStore = useAppStore();
