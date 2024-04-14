@@ -16,7 +16,7 @@ const router = useRouter();
 // });
 
 function routerExample() {
-  router.push("/empty");
+  router.push("/xempty");
 }
 </script>
 
@@ -25,7 +25,7 @@ function routerExample() {
     <div class="column flex-center" style="min-height: inherit">
       <q-img width="150px" alt="Jedlik logo" src="../assets/Jedlik_big.png" />
       <h2>Jedlik Ányos Technikum - Győr</h2>
-      <q-btn color="teal" no-caps @click="$router.push('/empty')">
+      <q-btn color="teal" no-caps @click="$router.push('/xempty')">
         <q-icon left size="3em" name="mdi-router" />
         <div>Go Empty Page from template</div>
       </q-btn>

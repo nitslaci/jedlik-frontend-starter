@@ -34,13 +34,22 @@ let showStatusBar = ref(true);
           </q-toolbar-title>
           <q-btn :class="{ active: $route.path === '/' }" clickable flat icon="mdi-home" label="Home" no-caps to="/" />
           <q-btn
-            :class="{ active: $route.path === '/empty' }"
+            :class="{ active: $route.path === '/xempty' }"
             clickable
             flat
             icon="mdi-application-outline"
-            label="Empty"
+            label="xEmpty"
             no-caps
-            to="/empty"
+            to="/xempty"
+          />
+          <q-btn
+            :class="{ active: $route.path === '/xhelp' }"
+            clickable
+            flat
+            icon="mdi-lifebuoy"
+            label="xHelp"
+            no-caps
+            to="/xhelp"
           />
           <q-toolbar-title class="my-title" />
           <q-btn dense flat icon="mdi-menu" round @click="showRightDrawer = !showRightDrawer" />
@@ -64,13 +73,24 @@ let showStatusBar = ref(true);
           <q-btn
             align="left"
             class="full-width q-ma-xs"
-            :class="{ active: $route.path === '/empty' }"
+            :class="{ active: $route.path === '/xempty' }"
             clickable
             flat
             icon="mdi-application-outline"
-            label="Empty"
+            label="xEmpty"
             no-caps
-            to="/empty"
+            to="/xempty"
+          />
+          <q-btn
+            align="left"
+            class="full-width q-ma-xs"
+            :class="{ active: $route.path === '/xhelp' }"
+            clickable
+            flat
+            icon="mdi-lifebuoy"
+            label="xHelp"
+            no-caps
+            to="/xhelp"
           />
         </q-scroll-area>
       </q-drawer>
@@ -113,17 +133,6 @@ let showStatusBar = ref(true);
             label="xCarousel"
             no-caps
             to="/xcarousel"
-          />
-          <q-btn
-            align="left"
-            class="full-width q-ma-xs"
-            :class="{ active: $route.path === '/xhelp' }"
-            clickable
-            flat
-            icon="mdi-lifebuoy"
-            label="xHelp"
-            no-caps
-            to="/xhelp"
           />
         </q-scroll-area>
       </q-drawer>

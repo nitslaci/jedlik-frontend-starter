@@ -4,21 +4,18 @@ to-do:
 2. Node.js csomagok telepítése (npm i)
 3. Források, backend szerver másolása, backend szerver indítása, ha a szerver lokális gépen fut
 4. Starter sablon megnyitása, ajánlott bővítmények telepítése/frissítése
-5. Axios backend szerver beállítása - Base URL és port(ha adott): ".env" állományban
-6. "1"-oldali "IOne" interface és axios URL-ek, akciómetódusok aktualizálása: src/stores/oneStore.ts
-7. "N"-oldali "IMany" interface, URL-ek és akciómetódusok aktualizálása: src/stores/manyStore.ts
-8. Egyéb táblához (ha van) "IOther" interface, URL-ek és akciómetódusok készítése: src/stores/otherStore.ts
-9. Layout módosítása a feladat szerint: src/layouts/MainLayout.vue 
-10. Nyitó oldal elkészítése (források beillesztése): src/pages/IndexPage.vue
-11. További oldalak elkészítése: src/pages/xyzPage.vue (használd a megfelelő minta mentését)
-12. Komponensek elkészítése (források beillesztése): src/components mappában (használd a megfelelő minta mentését)
-13. Route-ok módosítása/elkészítése az új oldalakhoz: src/router/routes.ts 
-14. Takarítás-törlés: oldalak, menük, route-ok, állapotsor ki-be kapcsolása, stb.:
-   - src/layouts/MainLayout.vue,
-   - src/router/index.ts,
-   - src/store/*Store.ts,
-   - src/pages/x*.vue állományok törlése
-   - src/components/x*.vue állományok törlése
+5. Minta x*.vue állományok törlése az src/pages és az src/components mappákból
+6. Minta alakalmazás-route-ok (path: /x*) törlése a router/routes.ts állományból
+7. Axios backend szerver beállítása - Base URL és port(ha adott): ".env" állományban
+8. "1"-oldali "IOne" interface és axios URL-ek, akciómetódusok aktualizálása: src/stores/oneStore.ts
+9. "N"-oldali "IMany" interface, URL-ek és akciómetódusok aktualizálása: src/stores/manyStore.ts
+10. Egyéb táblához (ha van) "IOther" interface, URL-ek és akciómetódusok készítése: src/stores/otherStore.ts
+11. Layout (menük, állapotsor) módosítása/törlése a feladat szerint: src/layouts/MainLayout.vue 
+12. Nyitó oldal elkészítése (források beillesztése): src/pages/IndexPage.vue
+13. További oldalak elkészítése: src/pages/xyzPage.vue (használd a megfelelő minta mentését)
+14. Komponensek (pl. dialógusablakok) elkészítése (ha van) (források beillesztése): src/components mappában (használd a megfelelő minta mentését)
+15. Route-ok módosítása/elkészítése az új oldalakhoz: src/router/routes.ts 
+16. Store-ok modosítása, felesleges minta metódusok törlése. (src/store/*Store.ts)
 
 Nyomkövetés:
 1. F5 -el indítsad el a nyomkövetést

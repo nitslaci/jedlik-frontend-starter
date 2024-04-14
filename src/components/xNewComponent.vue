@@ -38,7 +38,7 @@ function Submit() {
 function Reset() {
   manyStore.document = {
     dateField: date.formatDate(new Date(), "YYYY-MM-DD"),
-    imgField: "http://elit.jedlik.eu/nits/hahu/01.jpg",
+    imgField: "https://nitslaszlo.github.io/static/hahu_old/01.jpg",
     boolField: false,
   };
 }
