@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useManyStore } from "../stores/manyStore";
+import { IMany, useManyStore } from "../stores/manyStore";
 import { useAppStore } from "../stores/appStore";
 import { onMounted } from "vue";
 import { QTableColumn } from "quasar";
@@ -53,19 +53,19 @@ function filterUpdate() {
 // align with (default right): align: "center"
 const columns: QTableColumn[] = [
   { name: "id", label: "id", field: "id", align: "left" },
-  { name: "categoryId", label: "categoryId", field: "categoryId" },
-  { name: "titleField", label: "titleField", field: "titleField", align: "left" },
-  { name: "descField", label: "descField", field: "descField", align: "left" },
-  { name: "dateField", label: "dateField", field: "dateField", align: "left" },
-  { name: "boolField", label: "boolField", field: "boolField", align: "center" },
-  { name: "priceField", label: "priceField", field: "priceField" },
+  { name: "categoryId", label: "categoryId", field: (row: IMany) => row.categoryId, align: "left" },
+  { name: "titleField", label: "titleField", field: (row: IMany) => row.titleField, align: "left" },
+  { name: "descField", label: "descField", field: (row: IMany) => row.descField, align: "left" },
+  { name: "dateField", label: "dateField", field: (row: IMany) => row.dateField, align: "left" },
+  { name: "boolField", label: "boolField", field: (row: IMany) => row.boolField, align: "center" },
+  { name: "priceField", label: "priceField", field: (row: IMany) => row.priceField, align: "center" },
   {
     name: "category",
     label: "category",
-    field: (row: any) => row.category.categoryNameField,
+    field: (row: IMany) => row.category?.categoryNameField,
     align: "center",
   },
-  { name: "imgField", label: "imgField", field: "imgField", align: "center" },
+  { name: "imgField", label: "imgField", field: (row: IMany) => row.imgField, align: "center" },
 ];
 </script>
 

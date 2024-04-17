@@ -112,10 +112,11 @@ export const useManyStore = defineStore({
             .patch(`/advertisements/${this.document.id}`, diff)
             .then((res) => {
               Loading.hide();
-              if (res?.data?.id) {
+              const data: IMany = res?.data;
+              if (data.id) {
                 this.GetAll(); // refresh dataN with read all data again from backend
                 Notify.create({
-                  message: `Document with id=${res.data.id} has been edited successfully!`,
+                  message: `Document with id=${data.id} has been edited successfully!`,
                   color: "positive",
                 });
               }
@@ -153,10 +154,11 @@ export const useManyStore = defineStore({
           .post("/advertisements", this.document)
           .then((res) => {
             Loading.hide();
-            if (res?.data) {
+            const data: IMany = res?.data;
+            if (data) {
               this.GetAll(); // refresh dataN with read all data again from backend
               Notify.create({
-                message: `New document with id=${res.data.id} has been saved successfully!`,
+                message: `New document with id=${data.id} has been saved successfully!`,
                 color: "positive",
               });
               // Example page routing from store (no import required)
