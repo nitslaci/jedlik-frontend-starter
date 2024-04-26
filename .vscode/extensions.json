@@ -2,11 +2,11 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "vue.volar",
     "eamodio.gitlens",
     "formulahendry.auto-rename-tag",
     "formulahendry.auto-close-tag",
-    "christian-kohler.npm-intellisense"
+    "christian-kohler.npm-intellisense",
+    "vue.volar"
   ],
   "unwantedRecommendations": [
     "octref.vetur",

@@ -1,6 +1,13 @@
 import { defineStore } from "pinia";
 import { Notify, Loading } from "quasar";
 import { api } from "src/boot/axios";
+// import { useAppStore } from "./appStore";
+// import { useOneStore } from "./oneStore";
+// import { useManyStore } from "./manyStore";
+
+// const appStore = useAppStore();
+// const oneStore = useOneStore();
+// const manyStore = useManyStore()
 
 // === INTERFACES ===
 // Convert JSON document to TS Interface quickly: https://transform.tools/json-to-typescript

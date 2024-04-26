@@ -3,12 +3,16 @@
 // import { useAppStore } from "../stores/appStore";
 // import { useOneStore } from "../stores/oneStore";
 // import { useManyStore } from "../stores/manyStore";
+// import { useOtherStore } from "src/stores/otherStore";
 // import { onMounted } from "vue";
+
 import { useRouter } from "vue-router";
 
 // const appStore = useAppStore();
 // const oneStore = useOneStore();
 // const manyStore = useManyStore();
+// const otherStore = useOtherStore();
+
 const router = useRouter();
 
 // onMounted(() => {

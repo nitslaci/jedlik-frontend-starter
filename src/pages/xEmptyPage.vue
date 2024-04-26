@@ -1,7 +1,10 @@
 <script setup lang="ts">
-// import { onMounted } from "vue";
-// import { useManyStore } from "../stores/manyStore";
 // import { useAppStore } from "../stores/appStore";
+// import { useOneStore } from "../stores/oneStore";
+// import { useManyStore } from "../stores/manyStore";
+// import { useOtherStore } from "src/stores/otherStore";
+
+// import { onMounted } from "vue";
 // import { useRouter } from "vue-router";
 
 // const manyStore = useManyStore();
