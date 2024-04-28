@@ -35,7 +35,6 @@ let showStatusBar = ref(true);
           <q-btn :class="{ active: $route.path === '/' }" clickable flat icon="mdi-home" label="Home" no-caps to="/" />
           <q-btn
             :class="{ active: $route.path === '/xempty' }"
-            clickable
             flat
             icon="mdi-application-outline"
             label="xEmpty"
@@ -44,7 +43,6 @@ let showStatusBar = ref(true);
           />
           <q-btn
             :class="{ active: $route.path === '/xhelp' }"
-            clickable
             flat
             icon="mdi-lifebuoy"
             label="xHelp"
@@ -63,7 +61,6 @@ let showStatusBar = ref(true);
             align="left"
             class="full-width q-ma-xs"
             :class="{ active: $route.path === '/' }"
-            clickable
             flat
             icon="mdi-home"
             label="Home"
@@ -74,7 +71,6 @@ let showStatusBar = ref(true);
             align="left"
             class="full-width q-ma-xs"
             :class="{ active: $route.path === '/xempty' }"
-            clickable
             flat
             icon="mdi-application-outline"
             label="xEmpty"
@@ -85,7 +81,6 @@ let showStatusBar = ref(true);
             align="left"
             class="full-width q-ma-xs"
             :class="{ active: $route.path === '/xhelp' }"
-            clickable
             flat
             icon="mdi-lifebuoy"
             label="xHelp"
@@ -105,7 +100,6 @@ let showStatusBar = ref(true);
             align="left"
             class="full-width q-ma-xs"
             :class="{ active: $route.path === '/xtable' }"
-            clickable
             flat
             icon="mdi-table"
             label="xTable"
@@ -116,7 +110,6 @@ let showStatusBar = ref(true);
             align="left"
             class="full-width q-ma-xs"
             :class="{ active: $route.path === '/xcard' }"
-            clickable
             flat
             icon="mdi-card-account-details"
             label="xCard"
@@ -127,7 +120,6 @@ let showStatusBar = ref(true);
             align="left"
             class="full-width q-ma-xs"
             :class="{ active: $route.path === '/xcarousel' }"
-            clickable
             flat
             icon="mdi-view-carousel-outline"
             label="xCarousel"
