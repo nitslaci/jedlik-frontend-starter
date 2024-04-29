@@ -4,6 +4,7 @@ to-do:
 2. Node.js csomagok telepítése (npm i)
 3. Források, backend szerver másolása, backend szerver indítása, ha a szerver lokális gépen fut
 4. Starter sablon megnyitása, ajánlott bővítmények telepítése/frissítése
+4.b "Vue-Official" bővítmény downgrade az 1.8.27-es verzóra a korrekt intellisense-hez a *.vue állományokban.
 5. Minta x*.vue állományok törlése az src/pages és az src/components mappákból
 6. Minta alakalmazás-route-ok (path: /x*) törlése a router/routes.ts állományból
 7. Axios backend szerver beállítása - Base URL és port(ha adott): ".env" állományban
