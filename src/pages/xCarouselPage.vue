@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { useManyStore } from "../stores/manyStore";
+import { useStore } from "../stores/store";
 import { onMounted, ref } from "vue";
 
-const manyStore = useManyStore();
+const s = useStore();
 
 const currentSlide = ref(1);
 const autoplay = ref(2000);
 
 onMounted(() => {
-  manyStore.GetAll();
+  s.ManyGetAll();
 });
 </script>
 
@@ -28,7 +28,7 @@ onMounted(() => {
       @mouseleave="autoplay = 2000"
     >
       <q-carousel-slide
-        v-for="e in manyStore.documents"
+        v-for="e in s.many.documents"
         :key="e.id"
         class="column flex-top"
         :img-src="e.imgField"

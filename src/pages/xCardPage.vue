@@ -1,25 +1,23 @@
 <script setup lang="ts">
-import { useAppStore } from "../stores/appStore";
-import { useManyStore } from "../stores/manyStore";
+import { useStore } from "../stores/store";
 import { Dialog } from "quasar";
 import { onMounted } from "vue";
 import xEdit from "../components/xEditComponent.vue";
 import xNew from "../components/xNewComponent.vue";
 
-const appStore = useAppStore();
-const manyStore = useManyStore();
+const s = useStore();
 
 onMounted(() => {
-  manyStore.GetAll();
+  s.ManyGetAll();
 });
 
 function editDocument(id: number | undefined) {
-  manyStore.document.id = id;
-  appStore.showEditDialog = true;
+  s.many.document!.id = id;
+  s.app.showEditDialog = true;
 }
 
 function newDocument() {
-  appStore.showNewDialog = true;
+  s.app.showNewDialog = true;
 }
 
 function deleteDocument(id: number | undefined) {
@@ -30,8 +28,8 @@ function deleteDocument(id: number | undefined) {
     persistent: true,
   })
     .onOk(() => {
-      manyStore.document = { id: id };
-      manyStore.DeleteById();
+      s.many.document = { id: id };
+      s.ManyDeleteById();
     })
     .onCancel(() => {
       // router.push("/xcard");
@@ -39,19 +37,19 @@ function deleteDocument(id: number | undefined) {
 }
 
 function filterUpdate() {
-  if (appStore.filter.length > 0) {
-    manyStore.Filter();
+  if (s.app.filter!.length > 0) {
+    s.ManyFilter();
   } else {
-    manyStore.GetAll();
+    s.ManyGetAll();
   }
 }
 </script>
 
 <template>
   <q-page class="q-pa-md">
-    <q-input v-model="appStore.filter" dense filled label="Filter" type="text" @update:model-value="filterUpdate()" />
+    <q-input v-model="s.app.filter" dense filled label="Filter" type="text" @update:model-value="filterUpdate()" />
     <div class="row">
-      <div v-for="e in manyStore.documents" :key="e.id" class="col-sm-12 col-md-6 col-lg-4">
+      <div v-for="e in s.many.documents" :key="e.id" class="col-sm-12 col-md-6 col-lg-4">
         <q-card class="q-ma-md">
           <q-img :src="e.imgField">
             <div class="text-h7 absolute-top text-right">

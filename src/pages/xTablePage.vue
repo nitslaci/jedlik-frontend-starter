@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { IMany, useManyStore } from "../stores/manyStore";
-import { useAppStore } from "../stores/appStore";
+import { IMany, useStore } from "../stores/store";
 import { onMounted } from "vue";
 import { QTableColumn } from "quasar";
 
-const manyStore = useManyStore();
-const appStore = useAppStore();
+const s = useStore();
 
 onMounted(() => {
-  manyStore.GetAll();
+  s.ManyGetAll();
 });
 
 // Selected row(s) -> selection="single" or selection="multiple"
@@ -16,21 +14,21 @@ onMounted(() => {
 
 function deleteRecord(): void {
   // store.many.document = { id: selected.value[0].id };
-  manyStore.document = { id: appStore.selected[0].id };
-  manyStore.DeleteById();
+  s.many.document = { id: s.app.selected![0].id };
+  s.ManyDeleteById();
   // selected.value = [];
-  appStore.selected = [];
+  s.app.selected = [];
 }
 
 function filterUpdate() {
   // Clear button (x) set filter to null
-  if (appStore.filter) {
-    appStore.filter = "";
+  if (s.app.filter) {
+    s.app.filter = "";
   }
-  if (appStore.filter.length > 0) {
-    manyStore.Filter();
+  if (s.app.filter!.length > 0) {
+    s.ManyFilter()
   } else {
-    manyStore.GetAll();
+    s.ManyGetAll();
   }
 }
 
@@ -73,7 +71,7 @@ const columns: QTableColumn[] = [
   <q-page>
     <div class="q-pa-md">
       <q-input
-        v-model="appStore.filter"
+        v-model="s.app.filter"
         clearable
         dense
         filled
@@ -82,10 +80,10 @@ const columns: QTableColumn[] = [
         @update:model-value="filterUpdate()"
       />
       <q-table
-        v-model:selected="appStore.selected"
+        v-model:selected="s.app.selected"
         :columns="columns"
         dense
-        :rows="manyStore.documents"
+        :rows="s.many.documents!"
         selection="multiple"
         title="Advertisements"
         wrap-cells
@@ -107,23 +105,23 @@ const columns: QTableColumn[] = [
       <!-- Button for delete selected record: -->
       <div class="row justify-center q-ma-md">
         <q-btn
-          v-show="appStore.selected.length == 1"
+          v-show="s.app.selected!.length == 1"
           color="red"
           label="Delete selected record"
           no-caps
           @click="deleteRecord()"
         />
         <q-btn
-          v-show="appStore.selected.length != 0"
+          v-show="s.app.selected!.length != 0"
           class="q-ml-md"
           color="green"
-          :label="appStore.selected.length == 1 ? 'Clear selection' : 'Clear selections'"
+          :label="s.app.selected!.length == 1 ? 'Clear selection' : 'Clear selections'"
           no-caps
-          @click="appStore.selected = []"
+          @click="s.app.selected = []"
         />
       </div>
     </div>
-    {{ appStore.selected }}
+    {{ s.app.selected }}
   </q-page>
 </template>
 
